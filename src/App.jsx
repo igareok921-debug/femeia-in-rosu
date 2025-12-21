@@ -163,7 +163,7 @@ function HeroSpeaker({ speaker, onClick }) {
     >
     <div
   className="
-    h-20 w-22 md:h-20 md:w-20
+    h-20 w-20 md:h-20 md:w-20
     overflow-hidden rounded-full
     border border-white/20
     bg-black/40
@@ -231,7 +231,7 @@ export default function App() {
       },
       {
         name: "Emilia Ciaglic",
-        role: "Moderatoare",
+        role: "Moderator",
         subtitle: "Moderator/Coordonator & Vocalist",
         imgSrc: "/images/emilia.jpg",
         bio: [
@@ -247,6 +247,7 @@ export default function App() {
         bio: [
           "Maria Baciu – tricoterapeut și expert în sănătatea scalpului și a părului cu peste 7 ani experiență.",
           "Fondatoarea primului cabinet de Tricoterapie MB Trichotherapy.",
+          " În plus, vom aborda un subiect despre care prea puține femei au curajul să vorbească: căderea părului,problemele de scalp, îngrășarea părului — soluții și explicații oferite de o specialistă trihoterapeut."
         ],
       },
     ],
@@ -611,15 +612,10 @@ export default function App() {
         <Section id="speakers" eyebrow="Speakeri" title="Oameni care aduc inspirație, stil și claritate">
           <div className="grid gap-4">{speakers.map((s) => <SpeakerProfileCard key={s.name} {...s} />)}</div>
 
-          <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-7">
-            <p className="text-white/75 leading-relaxed">
-              În plus, vom aborda un subiect despre care prea puține femei au curajul să vorbească: căderea părului,
-              problemele de scalp, îngrășarea părului — soluții și explicații oferite de o specialistă trihoterapeut.
-            </p>
-          </div>
+         
         </Section>
 
-        <Section id="program" eyebrow="Program" title="1 februarie | Paris">
+        <Section id="program" eyebrow="Program" title="1 Februarie | Paris | Pretul - 140€">
           <div className="grid gap-4">
             <TimelineItem
               time="14:00 – 15:00"
