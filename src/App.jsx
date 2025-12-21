@@ -485,6 +485,25 @@ export default function App() {
 
         {/* Bandă info integrată (nu mai e pe mijloc) */}
         <div className="w-full md:max-w-[460px]">
+          <button
+  className="
+    mb-4
+    w-full
+    rounded-xl
+    bg-red-600
+    hover:bg-red-700
+    transition
+    py-3
+    text-lg
+    font-semibold
+    text-white
+    shadow-lg
+    shadow-red-600/30
+  "
+>
+  Prețul: 140 €
+</button>
+
           <HeroMetaBar
             items={[
               { icon: Calendar, label: "Data", value: "1 februarie 2026" },
@@ -492,6 +511,7 @@ export default function App() {
               { icon: MapPin, label: "Locație", value: "10 Rue Léonard de Vinci, 77170 Brie-Comte-Robert" },
             ]}
           />
+          
         </div>
       </div>
 
@@ -615,7 +635,7 @@ export default function App() {
          
         </Section>
 
-        <Section id="program" eyebrow="Program" title="1 Februarie | Paris | Pretul - 140€">
+        <Section id="program" eyebrow="Program" title="1 Februarie | Paris">
           <div className="grid gap-4">
             <TimelineItem
               time="14:00 – 15:00"
