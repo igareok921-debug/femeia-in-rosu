@@ -501,7 +501,7 @@ export default function App() {
     shadow-red-600/30
   "
 >
-  Prețul: 140 €
+  Prețul: 150 €
 </button>
 
           <HeroMetaBar
