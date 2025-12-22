@@ -230,7 +230,7 @@ export default function App() {
         ],
       },
       {
-        name: "Emilia Ciaglic",
+        name: "Emilia Ceaglic",
         role: "Moderator",
         subtitle: "Moderator/Coordonator & Vocalist",
         imgSrc: "/images/emilia.jpg",
