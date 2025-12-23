@@ -256,7 +256,7 @@ export default function App() {
 
   const nav = useMemo(
     () => [
-      { id: "despre", label: "Despre" },
+      { id: "despre", label: "Desq" },
       { id: "de-ce", label: "De ce roșu" },
       { id: "pentru-cine", label: "Pentru cine" },
       { id: "speakers", label: "Speakeri" },
@@ -501,7 +501,7 @@ export default function App() {
     shadow-red-600/30
   "
 >
-  Prețul: 150 €
+  Prețul: 140 €
 </button>
 
           <HeroMetaBar
