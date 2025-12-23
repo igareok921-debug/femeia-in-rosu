@@ -256,7 +256,7 @@ export default function App() {
 
   const nav = useMemo(
     () => [
-      { id: "despre", label: "Desq" },
+      { id: "despre", label: "Despre" },
       { id: "de-ce", label: "De ce roșu" },
       { id: "pentru-cine", label: "Pentru cine" },
       { id: "speakers", label: "Speakeri" },
