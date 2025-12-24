@@ -455,13 +455,33 @@ export default function App() {
 
   {/* Completează formularul */}
   <a
-    href="https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA%2Fviewform&e=AT18lUlheG-BlXbCSb-aHdMP-2kbRxdfQ0azGOg3w46bg9vr-l_x11SOSP7ofPRtm7RpR1jxWcwQkLZJkWVVUBJE9LXkyP1MH_BPYSvsA7O0DgkosfbCrsWcJjgT"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-sm md:text-base border border-[rgba(255,210,150,0.35)] bg-[rgba(255,210,150,0.08)] text-[rgba(255,210,150,0.95)] hover:bg-[rgba(255,210,150,0.15)] transition"
-  >
-    Completează formularul
-  </a>
+  href="https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA%2Fviewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    relative inline-flex items-center justify-center gap-2
+    rounded-2xl px-6 py-3 text-sm md:text-base font-medium
+    text-white
+    bg-[#b91c1c]
+    border border-[#b91c1c]/60
+    overflow-hidden
+
+    /* glow de bază */
+    shadow-[0_0_16px_rgba(185,28,28,0.6),0_0_36px_rgba(185,28,28,0.4)]
+    md:shadow-[0_0_22px_rgba(185,28,28,0.8),0_0_60px_rgba(185,28,28,0.55)]
+
+    transition-all duration-300 ease-out
+    hover:scale-[1.04]
+
+    focus:outline-none focus:ring-2 focus:ring-[#b91c1c]/70
+    neon-pulse
+  "
+>
+  Completează formularul
+</a>
+
+
+
 </motion.div>
 
     </div>
@@ -686,20 +706,30 @@ export default function App() {
   {/* CTA Formular - înainte de carduri */}
   <div className="-mt-2 md:-mt-6">
     <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA/viewform"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex w-full items-center justify-center rounded-2xl px-6 py-4
-                 text-sm md:text-base font-medium
-                 border border-[rgba(255,210,150,0.35)]
-                 bg-[rgba(255,210,150,0.08)]
-                 text-[rgba(255,210,150,0.95)]
-                 hover:bg-[rgba(255,210,150,0.16)]
-                 transition
-                 md:w-auto md:px-8"
-    >
-      Înscrie-te completând formularul
-    </a>
+  href="https://docs.google.com/forms/d/e/1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex w-full items-center justify-center rounded-2xl px-6 py-4
+             text-sm md:text-base font-medium
+             text-white
+             bg-[#b91c1c]
+             border border-[#b91c1c]/60
+
+             shadow-[0_0_16px_rgba(185,28,28,0.6),0_0_36px_rgba(185,28,28,0.4)]
+             md:shadow-[0_0_22px_rgba(185,28,28,0.8),0_0_60px_rgba(185,28,28,0.55)]
+
+             transition-all duration-300 ease-out
+
+             hover:shadow-[0_0_28px_rgba(185,28,28,0.95),0_0_80px_rgba(185,28,28,0.65)]
+             hover:scale-[1.04]
+
+             focus:outline-none focus:ring-2 focus:ring-[#b91c1c]/70
+
+             md:w-auto md:px-8"
+>
+  Înscrie-te completând formularul
+</a>
+
   </div>
   {/* Carduri telefon */}
   <div className="mt-6 grid gap-4 md:grid-cols-2">
