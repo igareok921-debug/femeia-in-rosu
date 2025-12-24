@@ -437,21 +437,33 @@ export default function App() {
         cu puterea interioară, eleganța cu energia și comunitatea cu transformarea.
       </motion.p>
 
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.28, ease: "easeOut" }}
-        className="mt-8 flex justify-center"
-      >
-        <button
-          onClick={() => scrollTo("program")}
-          className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-sm md:text-base border border-white/10 bg-white/5 text-white/85 hover:text-white hover:bg-white/10 transition"
-          type="button"
-        >
-          <Calendar className="h-5 w-5" />
-          Vezi programul
-        </button>
-      </motion.div>
+     <motion.div
+  initial={{ opacity: 0, y: 12 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.28, ease: "easeOut" }}
+  className="mt-8 flex flex-wrap justify-center gap-4"
+>
+  {/* Vezi programul */}
+  <button
+    onClick={() => scrollTo("program")}
+    className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-sm md:text-base border border-white/10 bg-white/5 text-white/85 hover:text-white hover:bg-white/10 transition"
+    type="button"
+  >
+    <Calendar className="h-5 w-5" />
+    Vezi programul
+  </button>
+
+  {/* Completează formularul */}
+  <a
+    href="https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA%2Fviewform&e=AT18lUlheG-BlXbCSb-aHdMP-2kbRxdfQ0azGOg3w46bg9vr-l_x11SOSP7ofPRtm7RpR1jxWcwQkLZJkWVVUBJE9LXkyP1MH_BPYSvsA7O0DgkosfbCrsWcJjgT"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 text-sm md:text-base border border-[rgba(255,210,150,0.35)] bg-[rgba(255,210,150,0.08)] text-[rgba(255,210,150,0.95)] hover:bg-[rgba(255,210,150,0.15)] transition"
+  >
+    Completează formularul
+  </a>
+</motion.div>
+
     </div>
   </div>
 </section>
@@ -670,23 +682,51 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="contact" eyebrow="Contact" title="Informații de contact">
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
-              <div className="font-serif text-xl text-white/95">Olga</div>
-              <a href="tel:+33782809686" className="mt-2 block text-lg text-white/80 hover:text-white transition">
-                +33 7 82 80 96 86
-              </a>
-            </div>
+       <Section id="contact" eyebrow="Contact" title="Informații de contact">
+  {/* CTA Formular - înainte de carduri */}
+  <div className="-mt-2 md:-mt-6">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex w-full items-center justify-center rounded-2xl px-6 py-4
+                 text-sm md:text-base font-medium
+                 border border-[rgba(255,210,150,0.35)]
+                 bg-[rgba(255,210,150,0.08)]
+                 text-[rgba(255,210,150,0.95)]
+                 hover:bg-[rgba(255,210,150,0.16)]
+                 transition
+                 md:w-auto md:px-8"
+    >
+      Înscrie-te completând formularul
+    </a>
+  </div>
+  {/* Carduri telefon */}
+  <div className="mt-6 grid gap-4 md:grid-cols-2">
+    <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+      <div className="font-serif text-xl text-white/95">Olga</div>
+      <a
+        href="tel:+33782809686"
+        className="mt-2 block text-lg text-white/80 hover:text-white transition"
+      >
+        +33 7 82 80 96 86
+      </a>
+    </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
-              <div className="font-serif text-xl text-white/95">Fiiama</div>
-              <a href="tel:+33744532048" className="mt-2 block text-lg text-white/80 hover:text-white transition">
-                +33 7 44 53 20 48
-              </a>
-            </div>
-          </div>
-        </Section>
+    <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+      <div className="font-serif text-xl text-white/95">Fiiama</div>
+      <a
+        href="tel:+33744532048"
+        className="mt-2 block text-lg text-white/80 hover:text-white transition"
+      >
+        +33 7 44 53 20 48
+      </a>
+    </div>
+  </div>
+
+</Section>
+
+
 </div>
 
         <footer className="border-t border-white/10 bg-black/30">
