@@ -455,7 +455,7 @@ export default function App() {
 
   {/* Completează formularul */}
   <a
-  href="https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA%2Fviewform"
+  href="https://docs.google.com/forms/d/e/1FAIpQLScACJMEqODFu0FiEqHwLFpgjc2qJhIlLN9U6GpjMDkggqoyeA/viewform"
   target="_blank"
   rel="noopener noreferrer"
   className="
